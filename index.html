@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-warning-subtle">
+    <div class="w-75 m-auto">
+        <div class="text-center w-100">
+            <h1 class="p-5">Bookmarker</h1>
+            <p class="fs-3 p-2 text-success"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></p>
+        </div>
+        <form id="bookmark-form">
+            <label for="site-name"><i class="fa-solid fa-book-bookmark"> </i> Site Name</label>
+            <input type="text" id="site-name" class="w-100 border border-dark-subtle rounded p-2 m-2" placeholder="Bookmark Name" required />
+            <label for="site-url"><i class="fa-solid fa-link"> </i> Site URL</label>
+            <input type="url" id="site-url" class="w-100 rounded border border-dark-subtle p-2 m-2" placeholder="Website URL" required />
+            <button type="button" class="btn btn-warning px-5 my-5" onclick="addSite()">Submit</button>
+        </form>
+        <table class="text-center bg-light my-5 w-100 bg-white">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="bookmark-list">
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>
